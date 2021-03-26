@@ -1,0 +1,484 @@
+/* Färgpalett */
+
+/* Grön #08884a */  /* Gul #ffde58 */ /* Röd #fe5454 */ 
+
+/* Gradient 
+
+background: rgb(254,84,84);
+background: linear-gradient(180deg, rgba(254,84,84,1) 0%, rgba(255,255,255,1) 8%, rgba(8,136,74,1) 16%, rgba(254,84,84,1) 23%, rgba(255,255,255,1) 32%, rgba(8,136,74,1) 41%, rgba(254,84,84,1) 49%, rgba(255,255,255,1) 59%, rgba(8,136,74,1) 68%, rgba(254,84,84,1) 77%, rgba(255,255,255,1) 85%, rgba(8,136,74,1) 92%, rgba(254,84,84,1) 100%);
+
+*/
+
+
+/* Grundelement */
+
+body {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  background: #08884a;
+  margin: 5vh 3vw;
+  box-shadow: -0.5vh -0.5vw 1.5vh 1.5vw #fe5454;
+  cursor: url('https://cdn.glitch.com/e166d3dd-b206-4f52-ac03-400d571f3bf3%2FPizza.png?v=1616679366197'), auto, viewBox: 0 0 42 42,  width: 100vw, height: 100vh;  
+}
+
+footer {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  z-index: 5;
+  background: rgb(254,84,84);
+  background: linear-gradient(180deg, rgba(254,84,84,1) 0%, rgba(255,255,255,1) 8%, rgba(8,136,74,1) 16%, rgba(254,84,84,1) 23%, rgba(255,255,255,1) 32%, rgba(8,136,74,1) 41%, rgba(254,84,84,1) 49%, rgba(255,255,255,1) 59%, rgba(8,136,74,1) 68%, rgba(254,84,84,1) 77%, rgba(255,255,255,1) 85%, rgba(8,136,74,1) 92%, rgba(254,84,84,1) 100%);
+  border: 0.5px solid #fe5454;
+    position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+footer::after {
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+ margin: -20vh 1vw;
+ font-family: 'Junicode';
+ font-size: 14pt;
+ text-align: center;
+ content: "Dagli studenti della Beckmans designhögskola nell'ambito del corso Interaction Design 1. Visualizza il CSS.";
+}
+
+header {
+  background-image: url(https://cdn.glitch.com/e166d3dd-b206-4f52-ac03-400d571f3bf3%2FWebbsidebakgrund.svg?v=1616683700809);
+  background-size: 25%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  border: solid 1px #fe5454;
+  z-index: 1;
+}
+
+html {
+  backdrop-filter: blur(10em);
+    background-color: white;
+
+}
+
+/* Sidsektioner */
+
+aside {
+background: rgb(254,84,84);
+background: #ffde58;
+}
+
+main {
+  background: #08884a;
+  border: solid 1px black;
+  
+}
+
+nav {
+  font-family: "Junicode";
+  border: 1vh double #08884a;
+  box-shadow: black 1vh 1vw 1vw;
+  padding: 1vh 1vw;
+  margin: 10vh 10vw;
+  background: #fe5454;
+  text-align: center;
+  font-size: 30pt;  
+  
+}
+
+
+/* Textdesign */
+
+abbr {
+  background: #08884a;
+  animation: gransdeko 2s ease-in-out infinite;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  border: white;
+}
+
+abbr:hover {
+  font-family: 'Gap Sans';
+  background: #08884a;
+  animation: gransdeko 2s ease-in-out infinite;
+  padding: 0.5vh 1vw;
+  margin: 0.5vh 1vw;
+  border: white;
+  background: #fe5454; 
+}
+
+blockquote {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-family: "Gap Sans";
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  animation: snedvridning 1s ease-in-out infinite;
+  margin: 10vh 10vw;
+  z-index: 3;
+}
+
+em {
+  background: #ffde58;
+  animation: dekoration 1s ease infinite;
+  margin: 1vh 1vw;
+  
+}
+
+h1 {
+  font-family: "Junicode";
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+  background: #08884a;
+  box-shadow: 2vh 2vh 2vh;
+  text-shadow: white 2vh 2vh 2vh;
+  border-radius: 3vh 3vw;
+  margin: 3vh 3vw;
+  border: solid 1px #000000;
+  font-size: 9vh;
+  line-height: 7vh;
+  animation: skugga 2s ease-in-out infinite;
+}
+
+h2 {
+  font-family: "Gap Sans";
+  background: #ffde58;
+  text-align: center;
+  margin: 5vh 5vw;
+  text-shadow: 2vh 2vh 2vh;
+  border-radius: 75%;
+}
+
+h3 {
+  font-family: "Gap Sans";
+  color: white;
+  background: #fe5454;
+  text-align: center;
+  margin: 5vh 5vw;
+  font-size: 32pt;
+  border: 6px double white;
+  border-radius: 2vh 2vw 1vh 1vw;
+  margin: 3vh 2vw;
+  padding: 2vh 2vw;
+  box-shadow: 2vh 2vw 2vh black;
+  animation: dekoration 1s infinite;
+}
+
+p {
+  margin: 5vh 5vw;
+  font-family: "Junicode";
+  font-size: 3vh;
+  text-align: center;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-shadow: black 0.1vh 0.1vw 0.1vh;
+
+}
+
+p::first-line {
+  font-variant: small-caps;
+}
+
+/* Listrelaterat */
+
+ol {
+  border: 8px double #fe5454;
+  border-radius: 100%;
+  font-family: "Junicode";
+  text-align: right;
+  list-style-type: circle;
+  list-style-position: inside;
+  padding: 2vw 2vh;
+  margin: 1vw 1vh;
+}
+
+li {
+  display: inline-block;
+  font-family: "Junicode";
+  text-align: center;
+  list-style-type: lower-alpha;
+  list-style-position: inside;
+}
+
+ul {
+  font-size: 15pt;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  background: rgb(254,84,84);
+  background: linear-gradient(180deg, rgba(254,84,84,1) 0%, rgba(255,255,255,1) 8%, rgba(8,136,74,1) 16%, rgba(254,84,84,1) 23%, rgba(255,255,255,1) 32%, rgba(8,136,74,1) 41%, rgba(254,84,84,1) 49%, rgba(255,255,255,1) 59%, rgba(8,136,74,1) 68%, rgba(254,84,84,1) 77%, rgba(255,255,255,1) 85%, rgba(8,136,74,1) 92%, rgba(254,84,84,1) 100%);
+  margin: 25vh 5vw;
+  padding: 2vh 2vw;
+  border-radius: 25%;
+  word-wrap: break-word;
+  text-align: center;
+  box-shadow: 2vh 1vw 2vh black;
+  animation: snedvridning 5s infinite ease;
+}
+
+
+
+/* Divspecifikt */
+
+
+.preamble {
+  background: white;
+  border: 1px solid #fe5454;
+  box-shadow: 2vh 2vh 2vh;
+  word-wrap: break-word;
+  margin: 4vh 3vw;
+  padding: 2vh 2vw;
+}
+
+.preamble::before {
+  content: "🇮🇹";
+}
+
+.preamble::after {
+  content: "🇮🇹";
+}
+
+.style-selector {
+  text-align: center;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.select {
+  background-color: white;
+  font-family: "Junicode";
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  z-index: 1;
+  font-size: 36pt;
+  margin: 5vw;
+  border: 5px #08884a;
+  box-shadow: 1vh 1vw 1vh black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  animation: gransdeko 4s ease infinite, fontvariation 1s ease infinite;
+}
+
+/* Länkar */
+
+
+a {
+  font-family: 'Gap Sans';
+  color: white;
+  border: double white 2px;
+  text-decoration: none;
+  animation: farghjul 5s ease infinite, granser 3s ease infinite;
+}
+
+a:visited {
+  font-family: 'Junicode';
+  color: white;
+  font-decoration: none;
+}
+
+a:hover {
+  font-family: 'Junicode';
+  color: #ffde58;
+}
+
+
+/* Animationer */
+
+@keyframes snedvridning {
+  
+  0% {
+    transform: skew(-0.05turn, 0deg);  
+  }
+  50% {
+     transform: skew(0.05turn, 5deg); 
+  }
+  100% {
+     transform: skew(-0.05turn, 0deg); 
+  }
+}
+
+@keyframes krypning {
+  0% {
+    top: -25vh;
+    transform: rotateX(20deg) translateZ(200vh);
+  }
+  100% { 
+    top: -25vh;
+    transform: rotateX(25deg) translateZ(500vh);
+  }
+}
+
+/* Grön #08884a */  /* Gul #ffde58 */ /* Röd #fe5454 */ 
+
+
+@keyframes farghjul {
+  0% {
+    color: #ffde58;
+  }
+  25% { 
+    color: #08884a
+  }
+  50% { 
+    color: white
+  }
+  75% { 
+    color: #08884a
+  }
+  100% {
+    color: #ffde58;
+  }
+}
+
+@keyframes granser {
+  0% {
+    border-radius: 60%;
+  }
+  
+  25% {
+    border-radius: 80%;
+  }
+  
+  80% {
+    border-radius: 60%;
+  }
+  
+  100% {
+    border-radius: 80%;
+  }
+  
+}
+
+@keyframes dekoration {
+  0% {
+    text-decoration: underline;
+  }
+  50% {
+    text-decoration: line-through;
+  }
+  100% {
+    text-decoration: overline;
+  }
+}
+
+@keyframes gransdeko {
+  0% {
+    border-style: dotted;
+  }
+  25% {
+    border-style: dashed;
+  }
+  50% {
+    border-style: solid;    
+  }
+  75% {
+    border-style: dashed;
+  }
+  100% {
+    border-style: dotted;
+  }
+}
+
+@keyframes blurrande {
+  0% {
+      filter: blur(0vh);
+  }
+  25% {
+       filter: blur(0.3vh);
+  }
+  50% {
+       filter: blur(0.4vh);  
+  }
+  75% {
+       filter: blur(0.3vh);
+  }
+  100% {
+       filter: blur(0vh);
+  }
+}
+
+@keyframes fontvariation {
+  0% {
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  }
+  50% {
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+  }
+  100% {
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  }
+}
+
+@keyframes skugga {
+  0% {
+      text-shadow: white 2vh 2vh 2vh;
+  }
+  25% { 
+      text-shadow: black 2vh 2vh 5vh;
+  }
+  50% {
+      text-shadow: white 2vh 2vh 2vh;  
+  }
+  75% {
+      text-shadow: black 2vh 2vh 5vh;
+  }
+  100% {
+      text-shadow: white 2vh 2vh 2vh;
+  }
+}
+
+
+/* Typografi */
+
+@font-face {
+  font-family: "Gap Sans";
+  src: url("https://cdn.glitch.com/e166d3dd-b206-4f52-ac03-400d571f3bf3%2FGapSansBold.woff2?v=1616584612543")
+      format("woff2"),
+    url("https://cdn.glitch.com/e166d3dd-b206-4f52-ac03-400d571f3bf3%2FGapSansBold.woff?v=1616584612656")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Junicode";
+  src: url("https://cdn.glitch.com/e166d3dd-b206-4f52-ac03-400d571f3bf3%2FJunicode-Italic.woff2?v=1616584917485")
+      format("woff2"),
+    url("https://cdn.glitch.com/e166d3dd-b206-4f52-ac03-400d571f3bf3%2FJunicode-Italic.woff?v=1616584917693")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Mediaanpassning */
+
+@media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width: 896px) {
+}
+
+@media screen {
+}
+
+/* only for print */
+
+@media print {
+}
